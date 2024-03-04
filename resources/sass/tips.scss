@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+ .tips-body{
+  height:100%;
+  font: normal 1em/1.5 "Open Sans";
+  background-color:rgb(230, 230, 230);
+  background-size:cover;
+  font-family: 'Baloo Chettan', cursive;
+ padding-bottom: 50px;
+}
+.tips-body a{
+  color:#ccc;
+}
+.tips-body .tips-container{
+  width:500px;
+  min-height:315px;
+  margin:0 auto;
+  position:relative;
+  padding-bottom:30px;
+  overflow:hidden;
+  margin-bottom: 90px;
+  border-radius: 25px;
+}
+.tips-body h1{
+  text-align:center;
+  text-shadow:0 1px white;
+  color:#02303F;
+  margin-bottom: 40px;
+}
+.tips-body h2{
+  color:#736861; 
+  margin:15px 0 5px;
+  text-shadow:0 1px rgba(255,255,255,0.5);
+}
+.tips-body h6{
+  color:#928566; 
+  margin:0;
+}
+.tips-body input[type="radio"] {
+position: absolute;
+width: 1px; 
+height: 1px; 
+padding: 0;
+margin: -1px;
+border: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+.tips-body label{
+  display:block;
+  width:32%;
+  border: 4px solid white;
+  position:absolute;
+  bottom:5px;
+  cursor: pointer;
+  transition: border-color 0.4s linear;
+  border-radius: 10px;
+}
+
+.tips-body label.second{
+  left:34%;
+}
+.tips-body label.third{
+  left:68%;
+}
+
+.tips-body blockquote{
+  margin:0;
+  padding:30px;
+  width:500px;
+  background-color: #194153;
+  color:white;
+  box-shadow: 0 5px 2px rgba(0,0,0,0.1);
+  position:relative;
+  transition: background-color 0.6s linear;
+}
+
+.tips-body blockquote:after { 
+  content: " "; 
+  height: 0; 
+  width: 0; 
+  position: absolute; 
+  top: 100%; 
+  border: solid transparent; 
+  border-top-color: #10cdee;
+  border-left-color:#2bc0da62;
+  border-width: 10px; 
+  left: 10%; 
+  display: block;
+} 
+.tips-body #first:checked ~ .first blockquote {
+  background-color:rgb(112, 154, 160);
+}
+.tips-body .first blockquote:after{
+  border: solid transparent; 
+  border-top-color: rgb(83, 74, 131);
+  border-left-color:rgb(16, 133, 127);
+  border-width: 10px;
+}
+.tips-body #second:checked ~ .two blockquote {
+  background-color:rgb(112, 154, 160);
+}
+.tips-body .two blockquote:after{
+  border: solid transparent; 
+  border-top-color: rgb(83, 74, 131);
+  border-left-color:rgb(16, 133, 127);
+  border-width: 10px;
+}
+.tips-body #third:checked ~ .three blockquote{
+  background-color:#7b9dc3;
+}
+.tips-body .three blockquote:after{
+  border: solid transparent; 
+  border-top-color: #548688;
+  border-left-color: #4980a5;
+  border-width: 10px;
+}
+.tips-body .quotes{
+  position:absolute;
+  color:rgba(61, 148, 189, 0.5);
+  font-size:5em;
+  font-family: 'lucieda console', monospace;
+}
+.tips-body .leftq{
+  top:-25px;
+  left:5px;
+}
+.tips-body .rightq{
+  bottom:-10px;
+  right:5px;
+}
+.tips-body img{
+  float:left;
+  margin-right: 20px;
+}
+.tips-body .slide{
+  position:absolute;
+  left:-100%;
+  opacity:0;
+  transition: all 0.6s ease-in;
+}
+
+#first:checked ~ label.first {
+  border-width:6px;
+  border-color:#3371ac;
+}
+#second:checked ~ label.second {
+  border-width:6px;
+   border-color:rgb(14, 97, 136);
+}
+#third:checked ~ label.third {
+  border:6px solid #547e88;
+}
+
+#first:checked ~ div.one {
+  left:0;
+  opacity:1;
+}
+#second:checked ~ div.two {
+  left:0;
+  opacity:1;
+}
+#third:checked ~ div.three {
+  left:0;
+  opacity:1;
+}
+#down div{
+  line-height: 30px;
+  font-size: 20px;
+}
+#autism div{
+  line-height: 30px;
+  font-size: 20px;
+}
+#hearing div{
+  line-height: 30px;
+  font-size: 20px;
+}

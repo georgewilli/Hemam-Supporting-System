@@ -1,0 +1,165 @@
+  .services-card{
+margin: auto; 
+margin-bottom: 60px;
+}
+  .first-card{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 15px;
+  }
+  .card-img-top{
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+  }
+  
+  .card-header-test{
+    background-color:#3c9aad;
+  }
+  .body-small-card h3{
+    font-weight:bold;  
+  }
+  .header-small-card{
+    padding:4px;
+  }
+  .body-small-card{
+    background:#f6fdff;
+
+  }
+  .card{
+    box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.39);
+    margin-bottom: 150px;
+  }
+  .hospital-border{
+   
+    border-left: 0.1px solid #f1eaea;
+      border-right: 0.1px solid #f1eaea;
+    border-top: 20px solid rgb(9, 160, 102); 
+    
+      border-top-left-radius: 40px; 
+      border-top-right-radius: 40px;
+  }
+  .school-border{
+    border-left: 0.1px solid #f1eaea;
+      border-right: 0.1px solid #f1eaea;
+    border-top: 20px solid rgb(17, 159, 202); 
+    
+      border-top-left-radius: 40px; 
+      border-top-right-radius: 40px;
+    
+  }
+  .rehab-border{
+    border-left: 0.1px solid #f1eaea;
+    border-right: 0.1px solid #f1eaea;
+  border-top: 20px solid rgb(31, 130, 160); 
+  
+    border-top-left-radius: 40px; 
+    border-top-right-radius: 40px;
+  }
+  .big-box{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 150px auto;
+    align-content: center;
+    display: block;
+    margin-left: 1.5%;
+  
+  }
+.card-footer{
+  border-left: 0.1px solid #f1eaea;
+  border-right: 0.1px solid #f1eaea;
+  border-top: none;
+}
+  .big-box .box {
+    position: relative;
+    width: 30%;
+    height: calc(300px - 30px);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .big-box .box .icon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 1;
+    
+  }
+
+  .big-box .box:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .big-box .box .icon .fa-solid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+  }
+  .big-box .box:hover .icon .fa-solid{
+    font-size: 40px;
+  }
+  .big-box .box .content {
+    position: absolute;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    top: 100%;
+    transition: 0.5s;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  .big-box .box:hover .content {
+    top: 100px;
+    opacity: 1;
+  }
+  .big-box .box .content h3{
+    margin: 0 0 10px;
+    padding: 0px;
+    color: #fff;
+    font-size: 24px;
+
+  }
+  .big-box .box .content  p{
+    color: #fff;
+  }
+
+   .hospital .icon{
+    background: rgb(7, 146, 93);
+  }
+   .hospital {
+    background: rgb(9, 160, 102);
+  }
+   .school .icon{
+    background: rgb(17, 159, 202);
+  }
+   .school {
+    background: rgb(9, 182, 235);
+  }
+  .rehaps .icon{
+    background: rgb(31, 130, 160);
+  }
+   .rehaps {
+    background: rgb(27, 163, 204);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .big-box .box {
+      width: 80%;
+      display: block;
+      margin: auto;
+      margin-bottom: 30px;
+      margin-left: 10%;
+    }
+  }
